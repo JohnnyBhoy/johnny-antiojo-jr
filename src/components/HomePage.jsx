@@ -17,10 +17,10 @@ export default function HomePage({ image }) {
                     className="h-[100%] mr-8"
                     alt="Avatar" />
                 <div className="absolute top-0 left-0 px-6 py-4 ml-[50%] space-y-5">
-                    <h4 className="mb-3 text-xl font-semibold tracking-tight dark:text-white text-teal-500 text-3xl">Hello, Nice to meet you,</h4>
-                    <h1 className="mb-3 text-xl font-semibold tracking-tight dark:text-white text-teal-500 text-3xl font-semibold text-red-500">I'm Johnny Antiojo Jr. a,</h1>
-                    <h1 className="mb-3 text-xl font-semibold tracking-tight dark:text-white text-green-500 text-5xl font-bold max-w-xs transition duration-300 ease-in-out hover:scale-110">Web & App</h1>
-                    <h1 className="mb-3 text-xl font-semibold tracking-tight dark:text-white text-blue-500 text-6xl font-bold max-w-xs transition duration-300 ease-in-out hover:scale-110"> DEVELOPER</h1>
+                    <h4 className="mb-3 text-xl font-semibold tracking-tight text-teal-500 text-3xl">Hello, Nice to meet you,</h4>
+                    <h1 className="mb-3 text-xl font-semibold tracking-tight text-teal-500 text-3xl font-semibold text-red-500">I'm Johnny Antiojo Jr. a,</h1>
+                    <h1 className="mb-3 text-xl font-semibold tracking-tight text-green-500 text-5xl font-bold max-w-xs transition duration-300 ease-in-out hover:scale-110">Web & App</h1>
+                    <h1 className="mb-3 text-xl font-semibold tracking-tight text-blue-500 text-6xl font-bold max-w-xs transition duration-300 ease-in-out hover:scale-110"> DEVELOPER</h1>
                 </div>
             </div>
             <div className="dark:bg-primary bg-white mt-14">
