@@ -33,7 +33,7 @@ export default function Navbar() {
               </Link>
             </div>
           </div>
-          <ul className="flex items-center space-x-10">
+          <ul className="flex items-center space-x-16">
             <li>
               <Link
                 className="text-teal-500 font-semibold text-lg"

@@ -11,11 +11,17 @@ const workIconClass = 'h-24 rounded-lg transition duration-300 ease-in-out hover
 export default function HomePage({ image }) {
     return (
         < div className="grid grid-cols-2">
-            <div className="justify-start dark:bg-primary mt-14">
+            <div className="justify-center dark:bg-primary mt-14 relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
                 <img
                     src={image}
                     className="h-[100%] mr-8"
                     alt="Avatar" />
+                <div className="absolute top-0 left-0 px-6 py-4 ml-[50%] space-y-5">
+                    <h4 className="mb-3 text-xl font-semibold tracking-tight dark:text-white text-teal-500 text-3xl">Hello, Nice to meet you,</h4>
+                    <h1 className="mb-3 text-xl font-semibold tracking-tight dark:text-white text-teal-500 text-3xl font-semibold text-red-500">I'm Johnny Antiojo Jr. a,</h1>
+                    <h1 className="mb-3 text-xl font-semibold tracking-tight dark:text-white text-green-500 text-5xl font-bold max-w-xs transition duration-300 ease-in-out hover:scale-110">Web & App</h1>
+                    <h1 className="mb-3 text-xl font-semibold tracking-tight dark:text-white text-blue-500 text-6xl font-bold max-w-xs transition duration-300 ease-in-out hover:scale-110"> DEVELOPER</h1>
+                </div>
             </div>
             <div className="dark:bg-primary bg-white mt-14">
                 <div className={myInfoClass}>
@@ -25,7 +31,7 @@ export default function HomePage({ image }) {
                         </div>
                         <div>
                             <MyInfo title="ABOUT ME" logo={BsFillPersonLinesFill}>
-                                Im Johnny Antiojo Jr, 29 Years old a Web-Developer and A database administrator.
+                                I'm Johnny Antiojo Jr, 29 Years old a Web-Developer and A database administrator.
                                 I worked in the Clinical Reaseach Organization (CRO) as a developer where I collaborated
                                 in Various Projects and developed the tool to be used by the Agents.
                             </MyInfo>
