@@ -7,20 +7,22 @@ import SocialMediaLinks from './SocialMediaLinks';
 const myInfoClass = "dark:bg-secondary bg-white shadow-lg rounded-lg mt-5 mr-5 p-3";
 const icons = "dark:text-teal-500 text-primary";
 const workIconClass = 'h-24 rounded-lg transition duration-300 ease-in-out hover:scale-110';
+const imageLabelClass = "mb-3 text-xl font-semibold tracking-tight text-teal-500 text-xl";
+const imageLabelClassJob = "mb-3 text-xl font-semibold tracking-tight font-bold max-w-xs transition duration-300 ease-in-out hover:scale-110";
 
 export default function HomePage({ image }) {
     return (
         < div className="grid grid-cols-2">
-            <div className="justify-center dark:bg-primary mt-14 relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+            <div className="justify-center dark:bg-primary mt-14 relative overflow-hidden shadow-lg cursor-pointer">
                 <img
                     src={image}
                     className="h-[100%] mr-8"
                     alt="Avatar" />
                 <div className="absolute top-0 left-0 px-6 py-4 ml-[50%] space-y-5">
-                    <h4 className="mb-3 text-xl font-semibold tracking-tight text-teal-500 text-3xl">Hello, Nice to meet you,</h4>
-                    <h1 className="mb-3 text-xl font-semibold tracking-tight text-teal-500 text-3xl font-semibold text-red-500">I'm Johnny Antiojo Jr. a,</h1>
-                    <h1 className="mb-3 text-xl font-semibold tracking-tight text-green-500 text-5xl font-bold max-w-xs transition duration-300 ease-in-out hover:scale-110">Web & App</h1>
-                    <h1 className="mb-3 text-xl font-semibold tracking-tight text-blue-500 text-6xl font-bold max-w-xs transition duration-300 ease-in-out hover:scale-110"> DEVELOPER</h1>
+                    <h4 className={imageLabelClass}>Hello, Nice to meet you,</h4>
+                    <h1 className={imageLabelClass}>I'm Johnny Antiojo Jr. a,</h1>
+                    <h1 className={imageLabelClassJob + " text-green-500 text-5xl"}>Web & App</h1>
+                    <h1 className={imageLabelClassJob + " text-blue-500 text-6xl"}> DEVELOPER</h1>
                 </div>
             </div>
             <div className="dark:bg-primary bg-white mt-14">
