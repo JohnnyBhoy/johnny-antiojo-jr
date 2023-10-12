@@ -45,7 +45,7 @@ export default function Navbar() {
             <li>
               <Link
                 className="text-white font-semibold text-lg hover:text-teal-500"
-                to="/"
+                to="/about"
               >
                 About
               </Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
             <li>
               <Link
                 className="text-white font-semibold text-lg  hover:text-teal-500"
-                to="/"
+                to="/blog"
               >
                 Blog
               </Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
             <li>
               <Link
                 className="text-white font-semibold text-lg  hover:text-teal-500"
-                to="/"
+                to="/portfolio"
               >
                 Portfolio
               </Link>
