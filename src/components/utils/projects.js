@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    href: "http://nonescost-online-clinic.infinityfreeapp.com",
+    href: "http://dev.repsearcher.com",
     imageUrl: "https://dev.repsearcher.com/images/homepage/logo.png",
     label: "Rep-Searcher",
   },
