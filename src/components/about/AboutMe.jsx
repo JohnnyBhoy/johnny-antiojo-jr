@@ -1,14 +1,32 @@
-import React from 'react'
-import PageContainer from '../PageContainer'
-import LeftPic from '../pages/LeftPic'
+import React from "react";
+import { BsPeople, BsPerson } from "react-icons/bs";
+import johnb from "../../image/johnb.jpg";
+import SocialMediaLinks from "../SocialMediaLinks";
+import Followers from "../home/Followers";
+import Information from "../home/Information";
+import MessageMe from "../home/MessageMe";
 
 export default function AboutMe() {
-    return (
-        < div className="grid grid-cols-2">
-        <LeftPic />
-        <div className="justify-center mt-14 relative overflow-hidden shadow-lg cursor-pointer">
-            About you
+  let yearsOfExperience = new Date();
+  yearsOfExperience = yearsOfExperience.getFullYear() - 2019;
+
+  return (
+    <div className="">
+      <div className="grid place-items-center">
+        <div className="">
+          <img src={johnb} alt="" className="rounded-full h-48" />
         </div>
+
+        <div className="text-center">
+          <MessageMe />
         </div>
-    )
+
+        <Information yearsOfExperience={yearsOfExperience} />
+
+        <Followers />
+      </div>
+
+      <SocialMediaLinks />
+    </div>
+  );
 }
