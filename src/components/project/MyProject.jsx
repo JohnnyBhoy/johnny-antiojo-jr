@@ -2,8 +2,11 @@ import React from "react";
 import { projects } from "../utils/projects";
 import ProjectDetails from "./ProjectDetails";
 import Technologies from "./Technologies";
+import { useProjectStore } from "../store/projectStore";
 
 const MyProject = () => {
+  const { project } = useProjectStore();
+
   return (
     <>
       <div className="lg:flex justify-between mt-6 w-full gap-2 cursor-pointer">
@@ -25,7 +28,12 @@ const MyProject = () => {
           </div>
         ))}
       </div>
-      <ProjectDetails />
+
+      {project === "rep-searcher" ? (
+        <ProjectDetails />
+      ) : project !== "rep-searcher" ? (
+        <ProjectDetails />
+      ) : null}
       <Technologies />
     </>
   );
