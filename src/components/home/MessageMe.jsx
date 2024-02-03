@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useMessageStore } from "../store/messageStore";
 
-const MessageMe = () => {
+const MessageMe = (showMessage) => {
   const jobTitle = "Fullstack Web Developer";
+  const { setShow, show } = useMessageStore();
 
   return (
     <>
@@ -11,7 +13,10 @@ const MessageMe = () => {
       <h3 className="animate-bouncefont-semibold text-2xl text-slate-500 text-start">
         {jobTitle}
       </h3>
-      <button className="animate-pulse bg-green-600 px-6 py-2 rounded text-white mt-2 w-full">
+      <button
+        className="animate-pulse bg-green-600 px-6 py-2 rounded text-white mt-2 w-full"
+        onClick={() => setShow(true)}
+      >
         Message me
       </button>
     </>

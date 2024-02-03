@@ -16,11 +16,13 @@ import { Link } from "react-router-dom";
 import { useAuth, useTheme } from "../../hooks";
 import Container from "../Container";
 import Code from "../../image/code.png";
+import { useMessageStore } from "../store/messageStore";
 
 export default function Navbar() {
   const { toggleTheme } = useTheme();
   const { authInfo, handleLogout } = useAuth();
   const { isLoggedIn } = authInfo;
+  const { setShow } = useMessageStore();
 
   return (
     <div className="fixed bg-secondary shadow-sm shadow-gray-500 w-full">
@@ -74,8 +76,8 @@ export default function Navbar() {
             </li>
             <li className=" hidden lg:block">
               <div className="space-x-10 flex">
-                <div className="flex">
-                  <button onClick={() => {}}>
+                <div className="flex" onClick={() => setShow(true)}>
+                  <button>
                     <BsEnvelope className="text-white" size={18} />
                   </button>
                   <h6 className="text-white m-2">jrantiojobhoy@gmail.com</h6>
