@@ -60,14 +60,6 @@ export default function Navbar() {
               </Link>
             </li>
             <li className=" hidden lg:block">
-              <Link
-                className="text-white   hover:text-teal-500"
-                to="/portfolio"
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li className=" hidden lg:block">
               <input
                 type="text"
                 className="border-2 border-dark-subtle p-1 rounded bg-transparent text-xl outline-none focus:border-white transition text-white"
@@ -76,7 +68,10 @@ export default function Navbar() {
             </li>
             <li className=" hidden lg:block">
               <div className="space-x-10 flex">
-                <div className="flex" onClick={() => setShow(true)}>
+                <div
+                  className="flex cursor-pointer"
+                  onClick={() => setShow(true)}
+                >
                   <button>
                     <BsEnvelope className="text-white" size={18} />
                   </button>

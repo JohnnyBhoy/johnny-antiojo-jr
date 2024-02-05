@@ -8,7 +8,7 @@ const Projects = () => {
   const [loading, setloading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setloading(false), 1500);
+    setTimeout(() => setloading(false), 300);
   }, []);
 
   return (
