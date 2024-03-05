@@ -1,6 +1,5 @@
 import React from "react";
 import AboutTitle from "./AboutTitle";
-import AboutContent from "./AboutContent";
 
 const Experience = () => {
   return (

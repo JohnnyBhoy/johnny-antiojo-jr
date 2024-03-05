@@ -47,7 +47,7 @@ const MessageForm = () => {
 
         <textarea
           value={message}
-          rows="10"
+          rows="9"
           onClick={(e) => setMessage(e.target.val)}
           className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border-2 "
         />
